@@ -15,5 +15,7 @@ Running large-scale AutoDock simulations requires significant HPC time. To rapid
 ## Project Structure
 * `data_parser.py`: Cleans and formats raw physicochemical parameters.
 * `model.py`: Trains a Random Forest model on the processed molecular features.
+* `db_manager.py`: Integrates Python with a SQLite backend to store structural datasets, demonstrating relational database management.
+* `test_pipeline.py`: Automated testing framework using `unittest` to validate data generation logic and data integrity.
 
 *(Note: Project is currently in active development for pre-incubation phase)*
