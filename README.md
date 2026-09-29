@@ -9,6 +9,9 @@ This project is a computational workflow designed to evaluate molecular interact
 * **Data Processing:** Pandas, NumPy
 * **Scientific Tools:** AutoDockTools, ChimeraX (Data source generation)
 
+## Engineering Approach: Synthetic Data Generation
+Running large-scale AutoDock simulations requires significant HPC time. To rapidly develop and test the Machine Learning pipeline, I engineered a Python-based synthetic data generator (`data_generator.py`). This script uses `NumPy` to simulate statistically correlated thermodynamic parameters (VDW, Intermolecular Energy, H-Bonds) that mirror real 3EML binding profiles, allowing the Random Forest model to be tested at scale.
+
 ## Project Structure
 * `data_parser.py`: Cleans and formats raw physicochemical parameters.
 * `model.py`: Trains a Random Forest model on the processed molecular features.
